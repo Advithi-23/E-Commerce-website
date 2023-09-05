@@ -1,0 +1,34 @@
+/* Add your custom styles for the "Browse Our Work" page here */
+
+/* Style for featured projects */
+.project {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.project p {
+    color: #777;
+}
+
+/* Style for project links */
+.project a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+   
+}

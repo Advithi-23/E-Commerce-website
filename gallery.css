@@ -1,0 +1,62 @@
+/* Reset default margin and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Background color for the entire page */
+}
+
+/* Style for the image gallery container */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between images */
+    padding: 20px; /* Add spacing around the gallery */
+}
+
+/* Style for each gallery item (image) */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Add a border around each image */
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for gallery items */
+.gallery-item:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Style for images within gallery items */
+.gallery-item img {
+    max-width: 100%; /* Ensure images scale down to fit their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below images */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Hover effect for images within gallery items */
+.gallery-item:hover img {
+    opacity: 0.8; /* Reduce opacity on hover for a subtle effect */
+}
+
+/* Style for image captions */
+.gallery-caption {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for captions */
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for captions */
+}
+
+/* Show caption on hover */
+.gallery-item:hover .gallery-caption {
+    opacity: 1; /* Make the caption visible on hover */
+}
